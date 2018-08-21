@@ -4,7 +4,7 @@ import * as ActionTypes from './actionTypes'
 //初始数据
 const initialState = {
     showPlayer : false, //player 显示状态
-    palyList : [], //播放列表
+    playList : [], //播放列表
     currentIndex : -1, //当前音乐索引
     currentMusic : {} //当前音乐
 }
@@ -49,7 +49,7 @@ function playList(playList = initialState.playList, action) {
             return action.playList
             break;
         default:
-            return playList
+            return playList;
     }
 }
 

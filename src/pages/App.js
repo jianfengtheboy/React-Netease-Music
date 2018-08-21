@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 
+import asyncComponent from '../common/asyncComponent'
+import Drawer from '../base/drawer/drawer'
+import SunHeader from '../components/sunHeader/sunHeader'
+import Player from '../components/player/player'
+import Menu from '../components/menu/menu'
 
 class App extends Component {
     constructor(props) {

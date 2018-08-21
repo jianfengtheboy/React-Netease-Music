@@ -2,10 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import App from 'pages/App'
+import App from './pages/App'
 import store from './store'
 
-import 'assets/css/index.scss'
+import "./assets/css/index.scss"
 //import registerServiceWorker from './registerServiceWorker';
 
 /*if(document.querySelector("#appQd")){
@@ -15,16 +15,16 @@ import 'assets/css/index.scss'
 }*/
 
 //版权信息
-const pkg = require('../package.json')
+const pkg = require('../package.json');
 window.SunPlayer = window.SunPlayer = `欢迎使用 Sun听英语!
 当前版本为：V${pkg.version}
-作者：茂茂
+作者：Sun
 歌曲来源于网易云音乐 (http://music.163.com)`
-console.info(`%c${window.mmPlayer}`, `color:blue`)
+console.info(`%c${window.SunPlayer}`, `color:#198cff`);
 
 ReactDOM.render(
     <Provider store={store}>
-    <App />
+        <App />
     </Provider>,
     document.getElementById('root')
 );
