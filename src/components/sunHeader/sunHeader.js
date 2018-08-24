@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
 
-import './sunHeader.scss'
+import './sunHeader.scss';
 
 //header组件
 const SunHeader = props => {

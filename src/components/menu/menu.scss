@@ -1,0 +1,33 @@
+@import "../../assets/css/base.scss";
+@import "../../assets/css/mixin.scss";
+
+.drawer-sidebar .menu {
+    height: 100%;
+    @include scroll;
+    &-title {
+        height: 44.44444vw;
+        text-align: center;
+        line-height: 44.44444vw;
+        background-color: $theme-bg;
+        opacity: 0.8;
+        @include bg-url('../../assets/img/menu/aip.png');
+        @include bg-full;
+    }
+    &-item {
+        display: flex;
+        height: 9.25926vw;
+        padding:2.77778vw;
+        border-bottom: 1px solid #ededed;
+        line-height: 9.25926vw;
+        p {
+            flex: 1;
+        }
+        span {
+            display: block;
+            width: 5.55556vw;
+            height: 9.25926vw;
+            @include bg-url('../../assets/img/aa7.png');
+            @include bg-full($s:2.77778vw,$p:center right);
+        }
+    }
+}

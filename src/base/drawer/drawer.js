@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import './drawer.scss'
+import './drawer.scss';
 
 //抽屉组件
 const Drawer = props => {

@@ -1,6 +1,6 @@
-@import 'reset.css';
-@import 'base.scss';
-@import 'mixin.scss'
+@import "./reset.css";
+@import "./base.scss";
+@import "./mixin.scss";
 
 // 间接设置全局动态属性可以防止它们在局部被覆
 :root {
@@ -52,7 +52,7 @@
         left: 0;
         width: 100vw;
         height: 100vw;
-        filter: blur(30px);
+        filter: blur(2.77778vw);
         transform: scale(1.5);
         @include bg-full($p:50%, $s:cover);
         &:after {
