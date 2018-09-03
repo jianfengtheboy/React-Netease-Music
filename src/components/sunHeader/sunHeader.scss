@@ -6,20 +6,20 @@
     background-color: $header-bg;
     .sun-header-left {
         position: absolute;
-        top: 4.16667vw;
-        left: 3.7037vw;
-        width: 6.48148vw;
-        height: 6.48148vw;
+        top: 45px;
+        left: 40px;
+        width: 70px;
+        height: 70px;
         background-image: url("./ov.png");
         @include bg-full;
     }
     .sun-header-title {
         display: flex;
         justify-content: center;
-        padding: 4.16667vw 26.85185vw;
+        padding: 45px 290px;
         .sun-header-item {
             flex:0 0 33.333333%;
-            height: 6.48148vw;
+            height:70px;
             @include bg-full($s:cover);
             &.music {
                 background-image: url("./t_actionbar_music_normal.png");
@@ -43,10 +43,10 @@
     }
     .sun-header-right {
         position: absolute;
-        top: 4.16667vw;
-        right: 3.05556vw;
-        width: 6.48148vw;
-        height: 6.48148vw;
+        top: 45px;
+        right: 33px;
+        width: 70px;
+        height: 70px;
         background-image: url("./pf.png");
         @include bg-full;
     }

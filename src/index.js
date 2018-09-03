@@ -16,7 +16,7 @@ import "./assets/css/index.scss"
 
 //版权信息
 const pkg = require('../package.json');
-window.SunPlayer = window.SunPlayer = `欢迎使用 Sun听英语!
+window.SunPlayer = window.SunPlayer = `欢迎使用 SunPlayer!
 当前版本为：V${pkg.version}
 作者：Sun
 歌曲来源于网易云音乐 (http://music.163.com)`

@@ -5,9 +5,9 @@
     height: 100%;
     @include scroll;
     &-title {
-        height: 44.44444vw;
+        height: 480px;
         text-align: center;
-        line-height: 44.44444vw;
+        line-height: 480px;
         background-color: $theme-bg;
         opacity: 0.8;
         @include bg-url('../../assets/img/menu/aip.png');
@@ -15,17 +15,17 @@
     }
     &-item {
         display: flex;
-        height: 9.25926vw;
-        padding:2.77778vw;
+        height: 100px;
+        padding:30px;
         border-bottom: 1px solid #ededed;
-        line-height: 9.25926vw;
+        line-height: 100px;
         p {
             flex: 1;
         }
         span {
             display: block;
-            width: 5.55556vw;
-            height: 9.25926vw;
+            width: 60px;
+            height: 100px;
             @include bg-url('../../assets/img/aa7.png');
             @include bg-full($s:2.77778vw,$p:center right);
         }

@@ -10,7 +10,6 @@
     "classnames": "^2.2.6",
     "fastclick": "^1.0.6",
     "node-sass": "^4.9.3",
-    "postcss": "^7.0.2",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "postcss-px-to-viewport": "^0.0.3",
