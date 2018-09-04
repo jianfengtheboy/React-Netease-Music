@@ -1,4 +1,4 @@
-import aixos from 'axios'
+import axios from 'axios'
 import {URL, defaultLimit} from '../common/config'
 
 axios.interceptors.response.use(response => {
