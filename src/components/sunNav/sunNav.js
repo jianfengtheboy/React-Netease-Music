@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { widthRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 import './sunNav.scss'
 
@@ -20,4 +20,4 @@ SunNav.propTypes = {
     title : PropTypes.string //标题
 }
 
-export default widthRouter(SunNav)
+export default withRouter(SunNav)

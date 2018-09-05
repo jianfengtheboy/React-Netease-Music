@@ -7,8 +7,8 @@ import './loading.scss'
 const Loading = (props) => {
     const { show, text } = props;
     return (
-        <div className="loading-box" style="{{ display:show ? 'block' : 'none' }}">
-            <span className="loading">{{ text }}</span>
+        <div className="loading-box" style={{display: show ? 'block' : 'none'}}>
+            <span className="loading">{text}</span>
         </div>
     )
 }

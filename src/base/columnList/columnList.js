@@ -15,7 +15,7 @@ const ColumnList = (props) => {
                     return (
                         <div className="column-item" onClick={() => onItemClick(item.id)} key={item.id}>
                             <div className="column-img" data-play={formatPlayCount(item.playCount)}>
-                                <img width="100%" height="100%" src={`${item.coverImgUrl}?param=200y200`} />
+                                <img width="100%" height="100%" src={`${item.coverImgUrl}?param=200y200`} alt=""/>
                             </div>
                             <p className="column-title">{item.name.replace(/\s/g, ' ')}</p>
                         </div>

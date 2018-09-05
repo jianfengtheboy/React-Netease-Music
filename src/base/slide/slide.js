@@ -43,7 +43,7 @@ class Slide extends Component {
     }
 
     componentWillUnmount () {
-        this.slide && this.slide.destory() //销毁 better-scroll
+        this.slide && this.slide.destroy() //销毁 better-scroll
     }
 
     //重新计算 better-scroll

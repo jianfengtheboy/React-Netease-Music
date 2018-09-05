@@ -10,9 +10,9 @@ const BaseSongList = (props) => {
     return (
         <div className="song-wrapper">
             {
-                list.length > 0 && list.map((item, index) => {
+                list.length > 0 && list.map((item, index) => (
                     <div
-                        className{classNames('song-item', {'active' : item.id === activeId})}
+                        className={classNames('song-item', {'active' : item.id === activeId})}
                         onClick={() => onItemClick(item.id, index)}
                         key={item.id}
                     >
@@ -25,7 +25,7 @@ const BaseSongList = (props) => {
                         </div>
                         <div className="song-btn" />
                     </div>
-                })
+                ))
             }
         </div>
     )
