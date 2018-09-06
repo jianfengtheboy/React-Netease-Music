@@ -29,11 +29,11 @@ class App extends Component {
         })
     }
 
-    render () {
+    render() {
         return (
             <Router>
                 <Drawer
-                    className="App Sun-wrapper"
+                    className="App sun-wrapper"
                     sidebar={Menu}
                     isDrawer={this.state.isDrawer}
                     onOpen={this.openDrawer}
@@ -44,7 +44,7 @@ class App extends Component {
                             <Route path="/discover" component={Discover} />
                             <Route path="/search" component={Search} />
                             <Route path="/toplist" component={TopList} />
-                            <Route path="/playlist" component={PlayList} />
+                            <Route path="/playlist/:id" component={PlayList} />
                             <Route path="/sheetlist" component={SheetList} />
                             <Route path="/skin" component={Skin} />
                             <Redirect to="/discover" />

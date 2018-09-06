@@ -115,4 +115,4 @@ class Progress extends Component {
     }
 }
 
-export default progress
+export default Progress

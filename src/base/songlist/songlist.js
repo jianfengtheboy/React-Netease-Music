@@ -32,10 +32,10 @@ const BaseSongList = (props) => {
 }
 
 BaseSongList.propTypes = {
-    list : PropTypes.any.isRequired,
-    showRank : PropTypes.bool,
-    onItemClick : PropTypes.func.isRequired,
-    activeId : PropTypes.number || PropTypes.string
+    list: PropTypes.any.isRequired,
+    showRank: PropTypes.bool,
+    onItemClick: PropTypes.func.isRequired,
+    activeId: PropTypes.number || PropTypes.string
 }
 
 export default BaseSongList

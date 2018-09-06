@@ -8,29 +8,29 @@
         .song-num {
             width: 160px;
             height: 160px;
+            line-height: 160px;
             margin-left: -20px;
             text-align: center;
-            line-height: 160px;
         }
         .song-info {
             flex: 1;
             min-width: 0;
-            padding: 25px 15px 25px 0;
+            padding: 27px 15px 27px 0;
             &:not(:last-child) {
                 border-bottom : 1px solid $songList-line;
             }
             h2 {
                 height: 50px;
-                margin-bottom: 20px;
+                margin-bottom: 16px;
                 line-height: 50px;
-                font-size: 46px;
+                font-size: 40px;
                 color: $songist-title-color;
                 @include no-wrap;
             }
             p {
                 height: 50px;
                 line-height: 50px;
-                font-size: 34px;
+                font-size: 32px;
                 color: $songist-desc-color;
                 @include no-wrap;
             }
@@ -44,6 +44,11 @@
             }
             h2,p {
                 color: $theme-color;
+            }
+        }
+        &:last-child {
+            .song-info {
+                border:none;
             }
         }
     }

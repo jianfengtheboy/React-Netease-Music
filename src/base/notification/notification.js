@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
@@ -13,7 +13,7 @@ function getUuid() {
 }
 
 class Notification extends Component {
-    static PropTypes = {
+    static propTypes  = {
         prefixCls : PropTypes.string,
         className : PropTypes.string
     }
@@ -24,7 +24,7 @@ class Notification extends Component {
 
     constructor(props) {
         super(props)
-        this.state => {
+        this.state = {
             notices : [], // 存储当前有的notices
             hasMask : true //是否显示蒙版
         }
@@ -94,7 +94,7 @@ Notification.newInstance = function newNotificationInstance(properties, callback
                 notification.remove(key)
             },
             component : notification,
-            destory() {
+            destroy() {
                 ReactDOM.unmountComponentAtNode(div)
                 document.body.removeChild(div)
             }

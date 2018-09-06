@@ -23,7 +23,8 @@ export function createSongs(music) {
         id : music.id,
         name : music.name,
         singer: music.artists.length > 0 && filterSinger(music.artists),
-        album : music.album.picUrl || null,
+        album : music.album.name,
+        image : music.album.picUrl || null,
         duration : music.duration / 1000,
         // url: `https://music.163.com/song/media/outer/url?id=${music.id}.mp3`
     })

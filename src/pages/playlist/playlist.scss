@@ -25,7 +25,7 @@
             z-index: 2;
             display: flex;
         }
-        .playlist-header-bd {
+        .playlist-header-hd {
             width: 300px;
             height: 300px;
             position: relative;
@@ -49,9 +49,9 @@
                 height: 40px;
                 line-height: 40px;
                 padding-left: 40px;
-                font-size: $font-size-small;
+                font-size: $font-size-small-ss;
                 color: #fff;
-                @include bg-url("../../assets/img/discover/zf.png");
+                @include bg-url('../../assets/img/discover/zf.png');
                 @include bg-full($p:left,$s:30px);
             }
             img {
@@ -67,7 +67,6 @@
                 margin-bottom: 30px;
                 line-height: 70px;
                 color: #fff;
-                font-weight: 700;
             }
             .playlist-header-user {
                 img {

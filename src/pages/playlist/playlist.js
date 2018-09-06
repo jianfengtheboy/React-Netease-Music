@@ -31,7 +31,6 @@ class PlayList extends Component {
     // 获取歌单详情
         getPlaylistDetail(this.props.match.params.id).then(res => {
             if (res.data.code === HTTP_OK) {
-                console.log(createPlayListDetail(res.data.result))
                 this.setState({
                     data: createPlayListDetail(res.data.result),
                     loading: false
@@ -52,9 +51,9 @@ class PlayList extends Component {
     }
 
     render() {
-        const {currentMusic} = this.props
-        const {defaultName, loading} = this.state
-        const {name, coverImgUrl, avatarUrl, nickname, playCount, tracks} = this.state.data
+        const { currentMusic } = this.props;
+        const { defaultName, loading } = this.state;
+        const { name, coverImgUrl, avatarUrl, nickname, playCount, tracks } = this.state.data
         return (
             <div className="playlist sun-wrapper">
                 <SunNav title={name ? name : defaultName} navType="fixed"/>
@@ -88,7 +87,8 @@ class PlayList extends Component {
                                 showRank
                                 list={tracks}
                                 onItemClick={this.onItemClick}
-                                activeId={currentMusic.id}/>
+                                activeId={currentMusic.id}
+                            />
                         }
                     </Scroll>
                }
