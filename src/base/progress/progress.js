@@ -10,8 +10,8 @@ class Progress extends Component {
         percent : PropTypes.number.isRequired,
         percentProgress : PropTypes.number,
         dragStart : PropTypes.func, // 拖拽开始事件
-        dragMove : PropTypes.func, // 拖曳中事件
-        dragEnd : PropTypes.func // 拖曳结束事件
+        dragMove : PropTypes.func, // 拖拽中事件
+        dragEnd : PropTypes.func, // 拖拽结束事件
     }
 
     constructor(props) {
@@ -25,8 +25,8 @@ class Progress extends Component {
     }
 
     componentDidMount () {
-        this.sunProgress = ReactDOM.findDOMNode(this.ref.sunProgress)
-        this.sunProgressInner = ReactDOM.findDOMNode(this.ref.sunProgressInner)
+        this.sunProgress = ReactDOM.findDOMNode(this.refs.sunProgress)
+        this.sunProgressInner = ReactDOM.findDOMNode(this.refs.sunProgressInner)
         this.bindEvents()
     }
 

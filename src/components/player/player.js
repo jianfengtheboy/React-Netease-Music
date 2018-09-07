@@ -158,10 +158,10 @@ class Player extends Component {
             <div className="player">
                 {/*<CSSTransition in={isFull} timeout={150} classNames="player-full"*/}
                 {/*onEnter={() => {*/}
-                {/*this.mmPlayer.style.display = 'block';*/}
+                {/*this.sunPlayer.style.display = 'block';*/}
                 {/*}}*/}
                 {/*onExited={() => {*/}
-                {/*this.mmPlayer.style.display = 'none';*/}
+                {/*this.sunPlayer.style.display = 'none';*/}
                 {/*}}>*/}
                 <div ref="sunPlayer" className="player-full" style={{display : isFull ? 'block' : 'none'}}>
                     <div className="player-bg" style={{backgroundImage: `url(${currentMusic.image}?param=200y200)`}} />
@@ -181,8 +181,35 @@ class Player extends Component {
                             <Progress percent={currentTime / currentMusic.duration} dragEnd={this.progressEnd} />
                             <span className="progress-time progress-time-r">{formatTime(currentMusic.duration)}</span>
                         </div>
+                        <div className="btn-wrapper">
+                            {/*<div className="btn btn-mode mode-list"/>*/}
+                            <div className="btn btn-prev" onClick={this.prev} />
+                            <div className={classNames('btn btn-play', {'btn-pause' : !isPlay})} onClick={this.play} />
+                            <div className="btn btn-next" onClick={this.next} />
+                            <div className="btn btn-list" onClick={this.toggleShow} />
+                        </div>
                     </div>
                 </div>
+                {/*</CSSTransition>*/}
+                <div className="player-min" onClick={() => this.setState({isFull: true})}>
+                    <div className="player-min-img">
+                        <img src={`${currentMusic.image}?param=100y100`} alt="" width="100%" height="100%" />
+                    </div>
+                    <div className="player-min-info">
+                        <h2>{currentMusic.name}</h2>
+                        <p>{currentMusic.singer}</p>
+                    </div>
+                    <div className={classNames('player-min-play', {'pause' : !isPlay})} onClick={this.play} />
+                    <div className="player-min-list" onClick={this.toggleShow} />
+                </div>
+                <audio ref="audioEle" src={`https://music.163.com/song/media/outer/url?id=${currentMusic.id}.mp3`} />
+                <MusicList
+                    show={showMusicList}
+                    onMaskClick={this.toggleShow}
+                    list={playList}
+                    music={currentMusic}
+                    onItemClick={this.selectPlay}
+                    deleteClick={this.deleteClick} />
             </div>
         )
     }
