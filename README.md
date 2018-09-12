@@ -18,6 +18,34 @@ npm run dev (或者cnpm run dev) //服务端运行
 npm run build //项目打包
 ```
 
+> Tips
+
+```
+打开node_modules文件夹，找到react-scripts文件夹内的config文件夹，配置其中webpack.config.dev.js和webpack.config.prod.js文件:
+
+1、const pxVW = require('postcss-px-to-viewport')；
+
+2、function resolve(dir) {
+    return path.join(__dirname, '..', dir)
+  }
+
+3、module > oneOf > test: /\.(css|scss)$/ > plugins > 添加：
+      pxVW({
+        viewportWidth: 1080,
+        unitPrecision: 5,
+        viewportUnit: 'vw',
+        selectorBlackList: [],
+        minPixelValue: 1,
+        mediaQuery: false
+      })
+      和
+      {
+        loader: require.resolve('sass-loader') // compiles Less to CSS
+      }
+
+具体配置详见screenShoot文件夹图片
+```
+
 > 后台服务器
 
 ```
