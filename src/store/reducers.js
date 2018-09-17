@@ -14,7 +14,6 @@ function showPlayer(showPlayer = initialState.showPlayer, action) {
     switch (action.type) {
         case ActionTypes.SET_SHOW_PLAYER:
             return action.showPlayer
-            break;
         default:
             return showPlayer
     }
@@ -25,7 +24,6 @@ function currentMusic(currentMusic = initialState.currentMusic, action) {
     switch (action.type) {
         case ActionTypes.SET_CURRENTMUSIC:
             return action.currentMusic
-            break;
         default:
             return currentMusic
     }
@@ -36,7 +34,6 @@ function currentIndex(currentIndex = initialState.currentIndex, action) {
     switch (action.type) {
         case ActionTypes.SET_CURRENTINDEX:
             return action.currentIndex
-            break;
         default:
             return currentIndex
     }
@@ -47,7 +44,6 @@ function playList(playList = initialState.playList, action) {
     switch (action.type) {
         case ActionTypes.SET_PLAYLIST:
             return action.playList
-            break;
         default:
             return playList;
     }

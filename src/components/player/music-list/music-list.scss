@@ -51,7 +51,7 @@
         margin-left: 30px;
         border-bottom: 1px solid #eee;
         line-height: 140px;
-        font-size: $font-size-large-s;
+        font-size: $font-size-medium-x;
         color: #333;
         &:nth-last-of-type(1) {
             border: 0;
@@ -68,12 +68,13 @@
             @include no-wrap;
         }
         small {
-            font-size: $font-size-small;
+            font-size: $font-size-small-s;
             color: #888;
         }
         &-del {
-            width: 110px;
+            width: 85px;
             height: 100%;
+            margin-right: 10px;
             @include bg-full;
             @include bg-url("../../../assets/img/player/list-del.png");
         }

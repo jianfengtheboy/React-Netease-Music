@@ -6,7 +6,7 @@ import {formatPlayCount} from '../../common/util'
 import "./rowList.scss"
 
 // 歌单基础列表组件——行
-class RowList = (props) => {
+const RowList = (props) => {
     const {list, onItemClick} = props
     return (
         <div className="row-wrapper">
@@ -14,7 +14,7 @@ class RowList = (props) => {
                 list.length > 0 && list.map((item, index) => (
                     <div className="row-item" onClick={() => onItemClick(item.id, index)} key={item.id}>
                         <div className="row-hd">
-                            <img src={`${item.coverImgUrl}?param=70y70`} />
+                            <img src={`${item.coverImgUrl}?param=70y70`} alt=""/>
                         </div>
                         <div className="row-bd">
                             <h2>{item.name}</h2>
@@ -28,8 +28,8 @@ class RowList = (props) => {
 }
 
 RowList.propTypes = {
-    list : PropTypes.any.isRequired,
-    onItemClick : PropTypes.func.isRequired
+    list: PropTypes.any.isRequired,
+    onItemClick: PropTypes.func.isRequired
 }
 
 export default RowList

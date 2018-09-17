@@ -25,14 +25,14 @@ $classPrefix: row;
                 height: 50px;
                 margin-bottom: 20px;
                 line-height: 50px;
-                font-size: 46px;
+                font-size: 40px;
                 color: $rowList-title-color;
                 @include no-wrap;
             }
             p {
                 height: 50px;
                 line-height: 50px;
-                font-size: 34px;
+                font-size: 32px;
                 color: $rowList-desc-color;
                 @include no-wrap;
             }
